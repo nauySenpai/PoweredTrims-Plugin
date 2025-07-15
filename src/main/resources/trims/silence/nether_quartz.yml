@@ -1,0 +1,25 @@
+# Silence Armor Trim - Nether_quartz Material
+# Stealth/Invisibility focused
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 2.0
+  # Add more attributes based on pattern/material
+
+# Permanent Potion Effects
+effects:
+  - type: SPEED
+    amplifier: 0
+  # Add more effects based on pattern
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "silence_nether_quartz_skill"
+  # setBonus: "silence_nether_quartz_set"  # Uncomment for set bonus
+
+# Lore Configuration
+lore:
+  enabled: true
+  template: "stealth"

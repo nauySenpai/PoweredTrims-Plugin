@@ -1,0 +1,43 @@
+# Sentry Armor Trim - Diamond Material
+# Guardian focused with set bonus
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 4.0
+  GENERIC_ARMOR_TOUGHNESS: 2.0
+
+# Permanent Potion Effects
+effects:
+  - type: RESISTANCE
+    amplifier: 1
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "sentry_diamond_guard"
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&6&lGuardian's Fortress"
+  description: "&7Full protection mastery"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: RESISTANCE
+      amplifier: 1
+    - type: REGENERATION
+      amplifier: 0
+  attributes:
+    GENERIC_ARMOR: 2.0
+    GENERIC_ARMOR_TOUGHNESS: 1.0
+  mythicskills:
+    onActivate: "sentry_set_fortress"
+
+# Lore Configuration
+lore:
+  enabled: true
+  template: "defense"

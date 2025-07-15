@@ -1,0 +1,51 @@
+# Sentry Armor Trim - Netherite Material
+# Ultimate guardian protection
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 5.0
+  GENERIC_ARMOR_TOUGHNESS: 3.0
+  GENERIC_KNOCKBACK_RESISTANCE: 0.2
+
+# Permanent Potion Effects
+effects:
+  - type: RESISTANCE
+    amplifier: 2
+  - type: FIRE_RESISTANCE
+    amplifier: 0
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "sentry_netherite_guard"
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&4&lUltimate Guardian"
+  description: "&7Unbreakable fortress of protection"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: RESISTANCE
+      amplifier: 2
+    - type: REGENERATION
+      amplifier: 1
+    - type: FIRE_RESISTANCE
+      amplifier: 0
+    - type: ABSORPTION
+      amplifier: 1
+  attributes:
+    GENERIC_ARMOR: 3.0
+    GENERIC_ARMOR_TOUGHNESS: 2.0
+    GENERIC_KNOCKBACK_RESISTANCE: 0.3
+  mythicskills:
+    onActivate: "sentry_netherite_ultimate"
+
+# Lore Configuration
+lore:
+  enabled: true
+  template: "defense"

@@ -1,0 +1,47 @@
+﻿# Sentry Armor Trim - Gold Material
+# Guardian focused with luck bonuses
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 3.2
+  GENERIC_ARMOR_TOUGHNESS: 1.2
+  GENERIC_LUCK: 2.0
+
+# Permanent Potion Effects (when permanent-effects: true)
+effects:
+  - type: RESISTANCE
+    amplifier: 0
+  - type: ABSORPTION
+    amplifier: 0
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "sentry_gold_guard"
+  # onUnequip: "sentry_gold_unguard"  # Optional
+  # setBonus: "sentry_gold_fortress"   # Optional set bonus
+
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&6&lGuardian's Fortress"
+  description: "&7Full protection mastery"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: SPEED
+      amplifier: 1
+    # Add more effects based on pattern
+  attributes:
+    GENERIC_ARMOR: 2.0
+    # Add more attributes based on pattern
+  mythicskills:
+    onActivate: "sentry_set_gold"
+# Lore Configuration
+lore:
+  enabled: true
+  template: "defense"  # References lore-format.yml template
