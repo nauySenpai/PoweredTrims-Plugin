@@ -1,0 +1,46 @@
+# Vex Armor Trim - Diamond Material
+# Phantom/Flying focused
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_MOVEMENT_SPEED: 0.03
+  GENERIC_ARMOR: 3.0
+
+# Permanent Potion Effects
+effects:
+  - type: SLOW_FALLING
+    amplifier: 0
+  - type: JUMP_BOOST
+    amplifier: 1
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "vex_diamond_flight"
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&d&lPhantom's Flight"
+  description: "&7Master of the skies"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: LEVITATION
+      amplifier: 0
+    - type: SLOW_FALLING
+      amplifier: 0
+    - type: JUMP_BOOST
+      amplifier: 2
+  attributes:
+    GENERIC_MOVEMENT_SPEED: 0.05
+  mythicskills:
+    onActivate: "vex_set_flight"
+
+# Lore Configuration
+lore:
+  enabled: true
+  template: "mobility"

@@ -1,0 +1,44 @@
+﻿# Tide Armor Trim - Resin_brick Material
+# Ocean/Trident focused
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 2.0
+  # Add more attributes based on pattern/material
+
+# Permanent Potion Effects
+effects:
+  - type: SPEED
+    amplifier: 0
+  # Add more effects based on pattern
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "tide_resin_brick_skill"
+  # setBonus: "tide_resin_brick_set"  # Uncomment for set bonus
+
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&1&lTrident Master"
+  description: "&7Lord of the tides"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: SPEED
+      amplifier: 1
+    # Add more effects based on pattern
+  attributes:
+    GENERIC_ARMOR: 2.0
+    # Add more attributes based on pattern
+  mythicskills:
+    onActivate: "tide_set_resin_brick"
+# Lore Configuration
+lore:
+  enabled: true
+  template: "ocean"
