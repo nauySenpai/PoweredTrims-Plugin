@@ -1,0 +1,48 @@
+# PoweredTrims Configuration
+# Plugin that adds stats and effects to Armor Trims
+
+# Plugin Settings
+settings:
+  debug: false
+  auto-update-lore: true
+  check-mythicmobs: true
+  permanent-effects: true
+
+  lore:
+    enabled: true
+    use-lore-format-file: true
+    position: "after_enchants"  # Options: "before_enchants", "after_enchants", "replace_enchants"
+
+# Messages Configuration
+messages:
+  prefix: "&6[PoweredTrims] "
+  reload-success: "&aPlugin reloaded successfully!"
+  reload-error: "&cError reloading plugin: {error}"
+  no-permission: "&cYou don't have permission to use this command!"
+  player-only: "&cThis command can only be used by players!"
+
+  stats:
+    header: "&6=== PoweredTrims Statistics ==="
+    total-trims: "&7Total configured trims: &e{count}"
+    active-effects: "&7Active effects: &e{count}"
+    mythicmobs-status: "&7MythicMobs integration: &e{status}"
+
+  debug:
+    header: "&6=== PoweredTrims Debug Information ==="
+    plugin-version: "&7Plugin Version: &e{version}"
+    server-version: "&7Server Version: &e{version}"
+    mythicmobs-version: "&7MythicMobs Version: &e{version}"
+    loaded-trims: "&7Loaded Trims: &e{count}"
+
+  help:
+    header: "&6=== PoweredTrims Commands ==="
+    stats: "&e/pt stats &7- Show plugin statistics"
+    reload: "&e/pt reload &7- Reload plugin configuration &c(Admin)"
+    debug: "&e/pt debug &7- Show debug information &c(Admin)"
+    help: "&e/pt help &7- Show this help message"
+    permissions: "&7Permissions:"
+    permission-view: "&7  poweredtrims.view/stats - View stats"
+    permission-admin: "&7  poweredtrims.admin - All admin commands"
+
+# You can configure trims inside separate files:
+# trims/<pattern>/<material>.yml

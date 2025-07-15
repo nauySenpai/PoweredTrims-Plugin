@@ -1,0 +1,34 @@
+name: PoweredTrims
+version: '${project.version}'
+main: com.poweredtrims.PoweredTrims
+api-version: 1.20
+author: PoweredTrims Team
+description: A Minecraft plugin that adds stats and effects to Armor Trims
+website: https://github.com/poweredtrims/PoweredTrims
+
+depend: []
+softdepend: []
+
+permissions:
+  poweredtrims.view:
+    description: View PoweredTrims information and stats
+    default: true
+  poweredtrims.admin:
+    description: Admin access to PoweredTrims (reload, debug)
+    default: op
+  poweredtrims.stats:
+    description: View PoweredTrims stats
+    default: true
+  poweredtrims.reload:
+    description: Reload PoweredTrims configuration
+    default: op
+  poweredtrims.debug:
+    description: Access PoweredTrims debug information
+    default: op
+
+commands:
+  poweredtrims:
+    description: Main PoweredTrims command
+    usage: /<command> [reload|stats|debug]
+    aliases: [pt, trims]
+    # No default permission - handled per subcommand

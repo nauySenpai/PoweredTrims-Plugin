@@ -1,0 +1,202 @@
+# Lore Format Templates for PoweredTrims
+# These templates define how trim information is displayed in item lore
+
+# Default template - Shows all available information
+default:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &7Attack Speed: &a+%attr:GENERIC_ATTACK_SPEED%"
+  - "&r  &7Max Health: &a+%attr:GENERIC_MAX_HEALTH%"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Armor Toughness: &a+%attr:GENERIC_ARMOR_TOUGHNESS%"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &7Jump Strength: &a+%attr:GENERIC_JUMP_STRENGTH%"
+  - "&r  &7Knockback Resistance: &a+%attr:GENERIC_KNOCKBACK_RESISTANCE%"
+  - "&r  &f%effect_lines%"
+
+
+
+minimal:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Eye set template - Special template for eye trim
+eye-set:
+  - "&r &9Trim Stats"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &f%effect_lines%"
+
+
+# Combat focused template
+combat:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Attack Speed: &a+%attr:GENERIC_ATTACK_SPEED%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &7Armor Toughness: &a+%attr:GENERIC_ARMOR_TOUGHNESS%"
+  - "&r  &f%effect_lines%"
+
+
+# Defense focused template
+defense:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &7Armor Toughness: &a+%attr:GENERIC_ARMOR_TOUGHNESS%"
+  - "&r  &7Max Health: &a+%attr:GENERIC_MAX_HEALTH%"
+  - "&r  &7Knockback Resistance: &a+%attr:GENERIC_KNOCKBACK_RESISTANCE%"
+  - "&r  &f%effect_lines%"
+
+
+# Utility focused template
+utility:
+  - "&r &9Trim Stats"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Jump Strength: &a+%attr:GENERIC_JUMP_STRENGTH%"
+  - "&r  &f%effect_lines%"
+
+
+# Compact template - Single line format
+compact:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Detailed template - Shows everything
+detailed:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Attack Speed: &a+%attr:GENERIC_ATTACK_SPEED%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &7Armor Toughness: &a+%attr:GENERIC_ARMOR_TOUGHNESS%"
+  - "&r  &7Max Health: &a+%attr:GENERIC_MAX_HEALTH%"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &7Jump Strength: &a+%attr:GENERIC_JUMP_STRENGTH%"
+  - "&r  &7Knockback Resistance: &a+%attr:GENERIC_KNOCKBACK_RESISTANCE%"
+  - "&r  &f%effect_lines%"
+
+
+# Set bonus template - For when player has full set
+set-bonus:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Speed focused template (for bolt pattern)
+speed:
+  - "&r &9Trim Stats"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Attack Speed: &a+%attr:GENERIC_ATTACK_SPEED%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Water focused template (for coast pattern)
+water:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Desert focused template (for dune pattern)
+desert:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Mobility focused template (for vex, flow patterns)
+mobility:
+  - "&r &9Trim Stats"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Jump Strength: &a+%attr:GENERIC_JUMP_STRENGTH%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Summoning focused template (for host pattern)
+summoning:
+  - "&r &9Trim Stats"
+  - "&r  &7Max Health: &a+%attr:GENERIC_MAX_HEALTH%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+
+# Necromancy focused template (for raiser pattern)
+necromancy:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Crafting focused template (for shaper pattern)
+crafting:
+  - "&r &9Trim Stats"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Stealth focused template (for silence pattern)
+stealth:
+  - "&r &9Trim Stats"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Nether focused template (for snout pattern)
+nether:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Magic focused template (for spire pattern)
+magic:
+  - "&r &9Trim Stats"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Ocean focused template (for tide pattern)
+ocean:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &f%effect_lines%"
+
+
+# Protection focused template (for ward pattern)
+protection:
+  - "&r &9Trim Stats"
+  - "&r  &7Armor: &a+%attr:GENERIC_ARMOR%"
+  - "&r  &7Knockback Resistance: &a+%attr:GENERIC_KNOCKBACK_RESISTANCE%"
+  - "&r  &f%effect_lines%"
+
+
+# Exploration focused template (for wayfinder pattern)
+exploration:
+  - "&r &9Trim Stats"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &7Luck: &a+%attr:GENERIC_LUCK%"
+  - "&r  &f%effect_lines%"
+
+
+# Nature focused template (for wild pattern)
+nature:
+  - "&r &9Trim Stats"
+  - "&r  &7Attack Damage: &a+%attr:GENERIC_ATTACK_DAMAGE%"
+  - "&r  &7Movement Speed: &a+%attr:GENERIC_MOVEMENT_SPEED%"
+  - "&r  &f%effect_lines%"
+
