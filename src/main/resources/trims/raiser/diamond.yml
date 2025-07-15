@@ -1,0 +1,44 @@
+﻿# Raiser Armor Trim - Diamond Material
+# Undead/Necromancy focused
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_ARMOR: 2.0
+  # Add more attributes based on pattern/material
+
+# Permanent Potion Effects
+effects:
+  - type: SPEED
+    amplifier: 0
+  # Add more effects based on pattern
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "raiser_diamond_skill"
+  # setBonus: "raiser_diamond_set"  # Uncomment for set bonus
+
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&8&lNecromancer's Power"
+  description: "&7Master of the undead"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: SPEED
+      amplifier: 1
+    # Add more effects based on pattern
+  attributes:
+    GENERIC_ARMOR: 2.0
+    # Add more attributes based on pattern
+  mythicskills:
+    onActivate: "raiser_set_diamond"
+# Lore Configuration
+lore:
+  enabled: true
+  template: "necromancy"

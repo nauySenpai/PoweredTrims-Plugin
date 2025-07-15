@@ -1,0 +1,52 @@
+# Bolt Armor Trim - Netherite Material
+# Lightning/Speed focused
+
+enabled: true
+
+# Bukkit Attribute Modifiers
+attributes:
+  GENERIC_MOVEMENT_SPEED: 0.04
+  GENERIC_ATTACK_SPEED: 1.0
+  GENERIC_ARMOR: 4.0
+  GENERIC_KNOCKBACK_RESISTANCE: 0.1
+
+# Permanent Potion Effects
+effects:
+  - type: SPEED
+    amplifier: 1
+  - type: HASTE
+    amplifier: 1
+  - type: FIRE_RESISTANCE
+    amplifier: 0
+
+# MythicMobs Skills Integration
+mythicskills:
+  onEquip: "bolt_netherite_speed"
+
+# Set Bonus (when wearing 4 pieces with same trim pattern)
+set_bonus:
+  enabled: true
+  name: "&e&lLightning Storm"
+  description: "&7Speed of lightning incarnate"
+  requirements:
+    pieces_needed: 4  # Helmet, Chestplate, Leggings, Boots
+    same_pattern: true  # Must be same trim pattern
+    same_material: false  # Can be different materials
+  effects:
+    - type: SPEED
+      amplifier: 2
+    - type: HASTE
+      amplifier: 2
+    - type: FIRE_RESISTANCE
+      amplifier: 0
+  attributes:
+    GENERIC_ATTACK_SPEED: 1.5
+    GENERIC_MOVEMENT_SPEED: 0.08
+    GENERIC_ATTACK_DAMAGE: 1.0
+  mythicskills:
+    onActivate: "bolt_netherite_storm"
+
+# Lore Configuration
+lore:
+  enabled: true
+  template: "speed"
